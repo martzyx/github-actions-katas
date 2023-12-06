@@ -5,6 +5,7 @@ on:
 jobs:
   my-job:
     runs-on: ubuntu-latest
+    container: gradle:6-jdk11
     steps:
       - run: |
           echo "🎉 The job was triggered by event: ${{ github.event_name }}"
